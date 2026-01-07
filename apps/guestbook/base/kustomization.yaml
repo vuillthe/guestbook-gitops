@@ -14,5 +14,5 @@ resources:
 
 images:
   - name: guestbook
-    newName: ghcr.io/your-username/guestbook-gitops
+    newName: ghcr.io/vuillthe/guestbook-gitops
     newTag: main-63115db

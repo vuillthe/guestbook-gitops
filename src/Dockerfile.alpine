@@ -2,15 +2,15 @@
 FROM python:alpine
 
 # Specify your e-mail address as the maintainer of the container image
-LABEL maintainer="your-email@he-arc.ch"
+LABEL maintainer="theo.vuillaume@he-arc.ch"
 
 # Add GitHub Container Registry labels
 LABEL org.opencontainers.image.title="Guestbook Application"
 LABEL org.opencontainers.image.description="A simple Python Flask guestbook application with PostgreSQL backend"
 LABEL org.opencontainers.image.vendor="HE-Arc"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.source="https://github.com/your-username/guestbook-gitops"
-LABEL org.opencontainers.image.documentation="https://github.com/your-username/guestbook-gitops/blob/main/README.md"
+LABEL org.opencontainers.image.source="https://github.com/vuillthe/guestbook-gitops"
+LABEL org.opencontainers.image.documentation="https://github.com/vuillthe/guestbook-gitops/blob/main/README.md"
 
 # Copy the contents of the current directory into the container directory /app
 COPY . /app

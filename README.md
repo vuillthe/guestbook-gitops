@@ -290,7 +290,7 @@ GitOps is a deployment methodology that uses Git as the single source of truth f
 2. **Update Repository Name in kustomization.yaml**:
    ```bash
    # Edit apps/guestbook/base/kustomization.yaml
-   # Change: ghcr.io/your-username/guestbook-gitops
+   # Change: ghcr.io/vuillthe/guestbook-gitops
    ```
 
 3. **Enable GitHub Actions**:

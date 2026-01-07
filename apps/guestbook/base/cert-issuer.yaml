@@ -5,7 +5,7 @@ metadata:
   namespace: guestbook
 spec:
   acme:
-    email: your-email@he-arc.ch # <--- CHANGE THIS
+    email: theo.vuillaume@he-arc.ch # <--- CHANGE THIS
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-guestbook-issuer-account-key
