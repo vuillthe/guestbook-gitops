@@ -15,4 +15,4 @@ resources:
 images:
   - name: guestbook
     newName: ghcr.io/vuillthe/guestbook-gitops
-    newTag: main-63115db
+    newTag: main-4cd1f8b
