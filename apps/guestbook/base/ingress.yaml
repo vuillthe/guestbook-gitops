@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-  - host: gb-heg.duckdns.org
+  - host: guestbook-tvu.duckdns.org
     http:
       paths:
       # Static files served by nginx
@@ -28,5 +28,5 @@ spec:
               number: 80
   tls:
   - hosts:
-    - gb-heg.duckdns.org
+    - guestbook-tvu.duckdns.org
     secretName: guestbook-tls-cert

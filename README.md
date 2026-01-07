@@ -71,7 +71,7 @@ This repository contains both the Python guestbook application source code and i
 └──────────────────────────────┼──────────────────────────────┘
                                │
                     ☁️ Internet (HTTPS)
-                    gb-heg.duckdns.org
+                    guestbook-tvu.duckdns.org
 ```
 
 ## 📦 Detailed Component Structure
@@ -137,7 +137,7 @@ cert-manager setup:
 │   ├── 🔗 ACME Server: Let's Encrypt v2
 │   └── 🛡️ Challenge: HTTP-01 via Traefik
 ├── 📜 Certificate: guestbook-tls-cert
-│   ├── 🌐 Domain: gb-heg.duckdns.org
+│   ├── 🌐 Domain: guestbook-tvu.duckdns.org
 │   ├── 🔄 Auto-renewal: Yes
 │   └── 🔐 Secret: guestbook-tls-cert
 └── 🌍 Ingress: TLS termination at Traefik
@@ -147,7 +147,7 @@ cert-manager setup:
 
 ### **📥 Request Flow (User → App)**
 ```
-1. 🌐 User visits https://gb-heg.duckdns.org/
+1. 🌐 User visits https://guestbook-tvu.duckdns.org/
 2. 🔒 DNS resolves to Traefik LoadBalancer
 3. 🔐 Traefik terminates SSL using guestbook-tls-cert
 4. 🛣️ Traefik routes based on path:
@@ -277,7 +277,7 @@ GitOps is a deployment methodology that uses Git as the single source of truth f
 - ArgoCD installed and running
 - cert-manager installed for SSL/TLS certificates
 - Traefik ingress controller
-- DNS record pointing `gb-heg.duckdns.org` to your cluster
+- DNS record pointing `guestbook-tvu.duckdns.org` to your cluster
 
 ### Deployment Steps
 
@@ -316,7 +316,7 @@ ArgoCD will automatically deploy PostgreSQL (via Helm), the guestbook applicatio
 
 The setup includes automatic SSL/TLS certificates via Let's Encrypt:
 
-- **Domain**: `gb-heg.duckdns.org`
+- **Domain**: `guestbook-tvu.duckdns.org`
 - **Issuer**: Let's Encrypt ACME HTTP-01 challenge
 - **Certificate**: Automatically managed by cert-manager
 - **Ingress**: Routes `/static` to nginx, everything else to guestbook app

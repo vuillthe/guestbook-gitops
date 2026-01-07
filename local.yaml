@@ -1,15 +1,16 @@
 apiVersion: v1
 kind: Config
+
 clusters:
 - name: "local"
   cluster:
     server: "https://rancher-tvu.duckdns.org/k8s/clusters/local"
+    insecure-skip-tls-verify: true
 
 users:
 - name: "local"
   user:
     token: "kubeconfig-user-chq2qvzqwt:gxxc7m4mg6lfmm9gg74c8hjl8cvs5drm45zt9b555m64j8xq4f4kmv"
-
 
 contexts:
 - name: "local"
